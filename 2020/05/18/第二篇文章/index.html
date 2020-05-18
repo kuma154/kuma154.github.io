@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第一篇文章, Kuma">
+    <meta name="keywords" content="关于我的博客搭建(二), Kuma">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>第一篇文章 | Kuma</title>
+    <title>关于我的博客搭建(二) | Kuma</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -308,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第一篇文章</h1>
+                    <h1 class="description center-align post-title">关于我的博客搭建(二)</h1>
                 </div>
             </div>
         </div>
@@ -430,16 +431,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Mac/">
-                                <span class="chip bg-color">Mac</span>
+                            <a href="/tags/github/">
+                                <span class="chip bg-color">github</span>
                             </a>
                         
-                            <a href="/tags/%E6%95%88%E7%8E%87/">
-                                <span class="chip bg-color">效率</span>
+                            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">环境搭建</span>
                             </a>
                         
-                            <a href="/tags/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/">
-                                <span class="chip bg-color">快捷方式</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -450,8 +451,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/technology/" class="post-category">
-                                technology
+                            <a href="/categories/github/" class="post-category">
+                                github
+                            </a>
+                        
+                            <a href="/categories/github/nodejs/" class="post-category">
+                                nodejs
                             </a>
                         
                     </div>
@@ -463,7 +468,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-17
+                    2020-05-18
                 </div>
                 
 
@@ -479,7 +484,32 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这是我的第二篇文章<a href="https://kuma154.github.io/myblogDemo/">我的博客demo</a></p>
+                <h2 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h2><p>首先，你先要有一个GitHub账户，去注册一个吧。</p>
+<p>注册完登录后，在GitHub.com中看到一个New repository，新建仓库</p>
+<p>创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。</p>
+<p>点击create repository。</p>
+<h2 id="生成SSH添加到GitHub"><a href="#生成SSH添加到GitHub" class="headerlink" title="生成SSH添加到GitHub"></a>生成SSH添加到GitHub</h2><p>回到你的git bash中，</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span></span><br><span class="line">git config --global user.email <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure>
+<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+<p>然后创建SSH,一路回车</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail"</span></span><br></pre></td></tr></table></figure>
+<p>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。</p>
+<p>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
+<p>而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把你的id_rsa.pub里面的信息复制进去。</p>
+<p>在gitbash中，查看是否成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<h2 id="将hexo部署到GitHub"><a href="#将hexo部署到GitHub" class="headerlink" title="将hexo部署到GitHub"></a>将hexo部署到GitHub</h2><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>然后</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>其中 hexo clean清除了你之前生成的东西，也可以不加。<br>hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写<br>hexo deploy 部署文章，可以用hexo d缩写</p>
+<p>注意deploy时可能要你输入username和password。</p>
+<p>得到下图就说明部署成功了，过一会儿就可以在<a href="http://yourname.github.io" target="_blank" rel="noopener">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
 
             </div>
             <hr/>
@@ -505,7 +535,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kuma154.github.io/2020/05/17/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/">http://kuma154.github.io/2020/05/17/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</a>
+                    <a href="http://kuma154.github.io/2020/05/18/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/">http://kuma154.github.io/2020/05/18/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -543,16 +573,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Mac/">
-                                    <span class="chip bg-color">Mac</span>
+                                <a href="/tags/github/">
+                                    <span class="chip bg-color">github</span>
                                 </a>
                             
-                                <a href="/tags/%E6%95%88%E7%8E%87/">
-                                    <span class="chip bg-color">效率</span>
+                                <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">环境搭建</span>
                                 </a>
                             
-                                <a href="/tags/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/">
-                                    <span class="chip bg-color">快捷方式</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -725,32 +755,37 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/05/17/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/">
+                <a href="/2020/05/18/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="第一篇文章">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="关于我的博客搭建(二)">
                         
-                        <span class="card-title">第一篇文章</span>
+                        <span class="card-title">关于我的博客搭建(二)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是我的第二篇文章我的博客demo
-
+                            GitHub创建个人仓库首先，你先要有一个GitHub账户，去注册一个吧。
+注册完登录后，在GitHub.com中看到一个New repository，新建仓库
+创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/technology/" class="post-category">
-                                    technology
+                            <a href="/categories/github/" class="post-category">
+                                    github
+                                </a>
+                            
+                            <a href="/categories/github/nodejs/" class="post-category">
+                                    nodejs
                                 </a>
                             
                             
@@ -761,16 +796,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Mac/">
-                        <span class="chip bg-color">Mac</span>
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">github</span>
                     </a>
                     
-                    <a href="/tags/%E6%95%88%E7%8E%87/">
-                        <span class="chip bg-color">效率</span>
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
                     </a>
                     
-                    <a href="/tags/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/">
-                        <span class="chip bg-color">快捷方式</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -788,16 +823,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="第一篇文章">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="关于我的博客搭建(一)">
                         
-                        <span class="card-title">第一篇文章</span>
+                        <span class="card-title">关于我的博客搭建(一)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是我的第一篇文章
-
+                            Hexo简介Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持
                         
                     </div>
                     <div class="publish-info">
@@ -808,8 +842,12 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/technology/" class="post-category">
-                                    technology
+                            <a href="/categories/github/" class="post-category">
+                                    github
+                                </a>
+                            
+                            <a href="/categories/github/nodejs/" class="post-category">
+                                    nodejs
                                 </a>
                             
                             
@@ -819,16 +857,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Mac/">
-                        <span class="chip bg-color">Mac</span>
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">github</span>
                     </a>
                     
-                    <a href="/tags/%E6%95%88%E7%8E%87/">
-                        <span class="chip bg-color">效率</span>
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
                     </a>
                     
-                    <a href="/tags/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/">
-                        <span class="chip bg-color">快捷方式</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
