@@ -484,7 +484,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h2><p>首先，你先要有一个GitHub账户，去注册一个吧。</p>
+                <p><img src="/2020/05/18/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/logo.png" alt></p>
+<h2 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h2><p>首先，你先要有一个GitHub账户，去注册一个吧。</p>
 <p>注册完登录后，在GitHub.com中看到一个New repository，新建仓库</p>
 <p>创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。</p>
 <p>点击create repository。</p>
@@ -500,7 +501,7 @@
 <p>而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把你的id_rsa.pub里面的信息复制进去。</p>
 <p>在gitbash中，查看是否成功</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
+<p> <code>[% asset_img https://fei.bar/medias/featureimages/18.jpg 图片1 %]</code></p>
 <h2 id="将hexo部署到GitHub"><a href="#将hexo部署到GitHub" class="headerlink" title="将hexo部署到GitHub"></a>将hexo部署到GitHub</h2><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为<br>YourgithubName就是你的GitHub账户</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
@@ -767,9 +768,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            GitHub创建个人仓库首先，你先要有一个GitHub账户，去注册一个吧。
+                            
+GitHub创建个人仓库首先，你先要有一个GitHub账户，去注册一个吧。
 注册完登录后，在GitHub.com中看到一个New repository，新建仓库
-创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署
+创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部
                         
                     </div>
                     <div class="publish-info">
@@ -819,56 +821,32 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
+                <a href="/2020/05/18/Third/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="关于我的博客搭建(一)">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Third">
                         
-                        <span class="card-title">关于我的博客搭建(一)</span>
+                        <span class="card-title">Third</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Hexo简介Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-18
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/github/" class="post-category">
-                                    github
-                                </a>
-                            
-                            <a href="/categories/github/nodejs/" class="post-category">
-                                    nodejs
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Kuma
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/github/">
-                        <span class="chip bg-color">github</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">环境搭建</span>
-                    </a>
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
                 </div>
                 
             </div>
