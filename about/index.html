@@ -344,7 +344,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
 </script>
 
 
@@ -360,7 +360,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">15</a></span>
+    <span class="count"><a href="/">21</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -390,7 +390,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">15</a></span>
+    <span class="count"><a href="/">21</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -548,7 +548,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,15],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,21],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -590,7 +590,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"Bilibili","value":4},{"name":"壁纸","value":8},{"name":"UP主","value":4},{"name":"动漫","value":8},{"name":"github","value":2},{"name":"推荐","value":4},{"name":"nodejs","value":2}],
+                data: [{"name":"壁纸","value":13},{"name":"动漫","value":13},{"name":"Bilibili","value":5},{"name":"UP主","value":5},{"name":"推荐","value":1},{"name":"github","value":2},{"name":"nodejs","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -614,7 +614,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["推荐","壁纸","京阿尼","影视区","学习区","github","环境搭建","hexo","persona","动漫"]
+                data: ["推荐","壁纸","京阿尼","影视区","switch区","学习区","persona","动漫","github","环境搭建"]
             }
         ],
         yAxis: [
@@ -627,7 +627,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [8,8,4,3,2,2,2,2,2,2],
+                data: [13,13,9,3,2,2,2,2,2,2],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -797,36 +797,6 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%8C%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">学习区</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%BD%B1%E8%A7%86%E5%8C%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">影视区</span>
-            </a>
-            
-            
-            
-            <a href="/tags/switch%E5%8C%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">switch区</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E7%BE%8E%E9%A3%9F%E5%8C%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">美食区</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E8%81%94%E7%9B%9F%E5%8C%BA/">
-                <span class="chip center-align waves-effect waves-light chip-default">联盟区</span>
-            </a>
-            
-            
-            
             <a href="/tags/%E6%8E%A8%E8%8D%90/">
                 <span class="chip center-align waves-effect waves-light chip-default">推荐</span>
             </a>
@@ -845,8 +815,50 @@
             
             
             
+            <a href="/tags/switch%E5%8C%BA/">
+                <span class="chip center-align waves-effect waves-light chip-default">switch区</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%8C%BA/">
+                <span class="chip center-align waves-effect waves-light chip-default">学习区</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
                 <span class="chip center-align waves-effect waves-light chip-default">前端教学</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%BD%B1%E8%A7%86%E5%8C%BA/">
+                <span class="chip center-align waves-effect waves-light chip-default">影视区</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%BE%8E%E9%A3%9F%E5%8C%BA/">
+                <span class="chip center-align waves-effect waves-light chip-default">美食区</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E8%81%94%E7%9B%9F%E5%8C%BA/">
+                <span class="chip center-align waves-effect waves-light chip-default">联盟区</span>
+            </a>
+            
+            
+            
+            <a href="/tags/persona/">
+                <span class="chip center-align waves-effect waves-light chip-default">persona</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%8A%A8%E6%BC%AB/">
+                <span class="chip center-align waves-effect waves-light chip-default">动漫</span>
             </a>
             
             
@@ -865,18 +877,6 @@
             
             <a href="/tags/hexo/">
                 <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
-            </a>
-            
-            
-            
-            <a href="/tags/persona/">
-                <span class="chip center-align waves-effect waves-light chip-default">persona</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E5%8A%A8%E6%BC%AB/">
-                <span class="chip center-align waves-effect waves-light chip-default">动漫</span>
             </a>
             
             
