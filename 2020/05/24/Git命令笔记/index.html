@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaScript复习(代码规范), Kuma">
+    <meta name="keywords" content="Git命令笔记, Kuma">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaScript复习(代码规范) | Kuma</title>
+    <title>Git命令笔记 | Kuma</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://giffiles.alphacoders.com/211/211265.gif')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://images6.alphacoders.com/480/thumb-1920-480421.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaScript复习(代码规范)</h1>
+                    <h1 class="description center-align post-title">Git命令笔记</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                                 <span class="chip bg-color">前端教学</span>
                             </a>
                         
-                            <a href="/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
+                            <a href="/tags/github/">
+                                <span class="chip bg-color">github</span>
                             </a>
                         
                     </div>
@@ -450,8 +450,8 @@
                                 前端
                             </a>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" class="post-category">
-                                JavaScript
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/github/" class="post-category">
+                                github
                             </a>
                         
                     </div>
@@ -463,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-22
+                    2020-05-24
                 </div>
                 
 
@@ -479,44 +479,81 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="JavaScript复习"><a href="#JavaScript复习" class="headerlink" title="JavaScript复习"></a>JavaScript复习</h2><h3 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h3><blockquote><p>代码规范通常包括以下几个方面:</p>
-<pre><code>变量和函数的命名规则
-空格，缩进，注释的使用规则。
-其他常用规范……
-规范的代码可以更易于阅读与维护。</code></pre><p>代码规范一般在开发前规定，可以跟你的团队成员来协商设置。</p>
+                <h3 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h3><h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p>将本地项目上传到github</p>
+<blockquote><p>1.新建一个桌面文件夹，进入文件夹内</p>
+<p>2.打开github,新建一个仓库，进入仓库复制链接地址（github-url）</p>
+<p>3.在文件夹内打开Git Bash Here</p>
+<p>4.将git仓库复制到本地文件夹内<br>$ git clone github-url<br>此时文件夹内会出现你的仓库名称的文件夹</p>
+<p>6.进入仓库文件夹，把项目所有玩家复制到这个文件夹内</p>
+<p>7.在仓库文件夹内打开Git Bash Here</p>
+<p>8.将所有文件添加<br>$ git add .</p>
+<p>9.如果报错是因为本地项目有js文件需添加以下命令<br>$ git config core.autocrlf false//提交检出均不转换</p>
+<p>10.取个名字生成静态页面<br>$ git commit  -m  “MyblogDemo”</p>
+<p>11.提交到github<br>git push -u origin master<br>第一次提交需要加上 -u</p>
 </blockquote>
 
-<h3 id="变量名"><a href="#变量名" class="headerlink" title="变量名"></a>变量名</h3><p>变量名推荐使用驼峰法来命名(camelCase):</p>
-<pre class=" language-javascript"><code class="language-javascript">firstName <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
-lastName <span class="token operator">=</span> <span class="token string">"Doe"</span><span class="token punctuation">;</span></code></pre>
-<h3 id="空格与运算符"><a href="#空格与运算符" class="headerlink" title="空格与运算符"></a>空格与运算符</h3><p>通常运算符 ( = + - * / ) 前后需要添加空格:</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> x <span class="token operator">=</span> y <span class="token operator">+</span> z<span class="token punctuation">;</span>
-<span class="token keyword">var</span> values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Volvo"</span><span class="token punctuation">,</span> <span class="token string">"Saab"</span><span class="token punctuation">,</span> <span class="token string">"Fiat"</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
-<h3 id="代码缩进"><a href="#代码缩进" class="headerlink" title="代码缩进"></a>代码缩进</h3><p>通常使用 4 个空格符号来缩进代码块：</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">toCelsius</span><span class="token punctuation">(</span>fahrenheit<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">/</span> <span class="token number">9</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>fahrenheit <span class="token operator">-</span> <span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-不推荐使用 TAB 键来缩进，因为不同编辑器 TAB 键的解析不一样。</code></pre>
-<h3 id="语句规则"><a href="#语句规则" class="headerlink" title="语句规则"></a>语句规则</h3><blockquote><p>简单语句的通用规则:</p>
-<p>一条语句通常以分号作为结束符。</p>
-<p>复杂语句的通用规则:</p>
-<p>将左花括号放在第一行的结尾。<br>左花括号前添加一空格。<br>将右花括号独立放在一行。<br>不要以分号结束一个复杂的声明。</p>
+<h3 id="新建"><a href="#新建" class="headerlink" title="新建"></a>新建</h3><p>创建一个新的 git 版本库。这个版本库的配置、存储等信息会被保存到.git 文件夹中</p>
+<blockquote><p>初始化当前项目<br>$ git init</p>
+<p>新建一个目录，将其初始化为Git代码库<br>$ git init [project-name]</p>
+<p>在指定目录创建一个空的 Git 仓库。运行这个命令会创建一个名为 directory，<br>只包含 .git 子目录的空目录。</p>
+<p>$ git init –bare <directory></directory></p>
+<p>下载一个项目和它的整个代码历史<br>这个命令就是将一个版本库拷贝到另一个目录中，同时也将分支都拷贝到新的版本库中<br>。这样就可以在新的版本库中提交到远程分支<br>$ git clone [url]</p>
 </blockquote>
 
-<h3 id="对象规则"><a href="#对象规则" class="headerlink" title="对象规则"></a>对象规则</h3><blockquote><p>对象定义的规则:</p>
-<p>将左花括号与类名放在同一行。<br>冒号与属性值间有个空格。<br>字符串使用双引号，数字不需要。<br>最后一个属性-值对后面不要添加逗号。<br>将右花括号独立放在一行，并以分号作为结束符号。</p>
-<pre class=" language-javascript"><span class="keyword"><code class="language-javascript"><span class="keyword">var</span> person = {
-    firstName: <span class="string">"John"</span>,
-    lastName: <span class="string">"Doe"</span>,
-    age: <span class="number">50</span>,
-    eyeColor: <span class="string">"blue"</span>
-};</code></pre>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>更改设置。可以是版本库的设置，也可以是系统的或全局的</p>
+<blockquote><p> 显示当前的Git配置<br>$ git config –list</p>
+<p> 编辑Git配置文件<br>$ git config -e [–global]</p>
+<p> 输出、设置基本的全局变量<br>$ git config –global user.email<br>$ git config –global user.name</p>
+<p>$ git config –global user.email “<a href="mailto:MyEmail@gmail.com">MyEmail@gmail.com</a>“<br>$ git config –global user.name “My Name”</p>
+<p> 定义当前用户所有提交使用的作者邮箱。<br>$ git config –global alias.<alias-name> <git-command></git-command></alias-name></p>
+<p> 为Git命令创建一个快捷方式（别名）。<br>$ git config –system core.editor <editor></editor></p>
 </blockquote>
 
-<h3 id="使用小写文件名"><a href="#使用小写文件名" class="headerlink" title="使用小写文件名"></a>使用小写文件名</h3><blockquote><p>大多 Web 服务器 (Apache, Unix) 对大小写敏感： london.jpg 不能通过 London.jpg 访问。</p>
-<p>其他 Web 服务器 (Microsoft, IIS) 对大小写不敏感： london.jpg 可以通过 London.jpg 或 london.jpg 访问。</p>
-<p>你必须保持统一的风格，我们建议统一使用小写的文件名。</p>
+
+<h3 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h3><p>git 内置了对命令非常详细的解释，可以供我们快速查阅</p>
+<blockquote><p> 查找可用命令<br>$ git help</p>
+<p>查找所有可用命令<br>$ git help -a</p>
+<p> 在文档当中查找特定的命令<br> git help &lt;命令&gt;<br>$ git help add<br>$ git help commit<br>$ git help init</p>
 </blockquote>
+
+<h3 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h3><p>显示索引文件（也就是当前工作空间）和当前的头指针指向的提交的不同</p>
+<blockquote><p> 查找可用命令<br>$ git help</p>
+<p>查找所有可用命令<br>$ git help -a</p>
+<p> 在文档当中查找特定的命令<br> 显示分支，未跟踪文件，更改和其他不同<br>$ git status</p>
+<p> 查看其他的git status的用法<br>$ git help status</p>
+</blockquote>
+
+<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><p>添加文件到当前工作空间中。如果你不使用 git add 将文件添加进去，那么这些文件也不会添加到之后的提交之中</p>
+<blockquote><p> 添加一个文件<br>$ git add test.js</p>
+<p>添加一个子目录中的文件<br>$ git add /path/to/file/test.js</p>
+<p>支持正则表达式<br>$ git add ./*.js</p>
+<p> 添加指定文件到暂存区<br>$ git add [file1] [file2] …</p>
+<p> 添加指定目录到暂存区，包括子目录<br>$ git add [dir]</p>
+<p> 添加当前目录的所有文件到暂存区<br>$ git add .</p>
+<p> 添加每个变化前，都会要求确认<br> 对于同一个文件的多处变化，可以实现分次提交<br>$ git add -p</p>
+</blockquote>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>rm 和上面的 add 命令相反，从工作空间中去掉某个文件</p>
+<blockquote><p> 移除 HelloWorld.js<br>$ git rm HelloWorld.js</p>
+<p> 移除子目录中的文件<br>$ git rm /pather/to/the/file/HelloWorld.js</p>
+<p> 删除工作区文件，并且将这次删除放入暂存区<br>$ git rm [file1] [file2] …</p>
+<p> 停止追踪指定文件，但该文件会保留在工作区<br>$ git rm –cached [file]</p>
+</blockquote>
+
+<h3 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h3><p>重命名或移动一个文件</p>
+<blockquote><p> 重命名<br>$ git mv test.js test2.js</p>
+<p> 移动<br>$ git mv test.js ./new/path/test.js</p>
+<p> 改名文件，并且将这个改名放入暂存区<br>$ git mv [file-original] [file-renamed]</p>
+<p> 强制重命名或移动<br> 这个文件已经存在，将要覆盖掉<br>$ git mv -f myFile existingFile</p>
+</blockquote>
+
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><blockquote><p> 生成一个可供发布的压缩包<br>$ git archive</p>
+<p> 打补丁<br>$ git apply ../sync.patch</p>
+<p> 测试补丁能否成功<br>$ git apply –check ../sync.patch</p>
+<p> 查看Git的版本<br>$ git –version</p>
+</blockquote>
+
+
 
 
 
@@ -545,7 +582,7 @@ lastName <span class="token operator">=</span> <span class="token string">"Doe"<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kuma154.github.io/2020/05/22/JavaScript%E5%A4%8D%E4%B9%A0(%E4%B8%83)/">http://kuma154.github.io/2020/05/22/JavaScript%E5%A4%8D%E4%B9%A0(%E4%B8%83)/</a>
+                    <a href="http://kuma154.github.io/2020/05/24/Git%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/">http://kuma154.github.io/2020/05/24/Git%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -587,8 +624,8 @@ lastName <span class="token operator">=</span> <span class="token string">"Doe"<
                                     <span class="chip bg-color">前端教学</span>
                                 </a>
                             
-                                <a href="/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
+                                <a href="/tags/github/">
+                                    <span class="chip bg-color">github</span>
                                 </a>
                             
                         </div>
@@ -756,9 +793,10 @@ lastName <span class="token operator">=</span> <span class="token string">"Doe"<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/05/24/Git%E5%91%BD%E4%BB%A4%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
@@ -779,9 +817,9 @@ lastName <span class="token operator">=</span> <span class="token string">"Doe"<
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -798,6 +836,7 @@ lastName <span class="token operator">=</span> <span class="token string">"Doe"<
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -820,22 +859,25 @@ lastName <span class="token operator">=</span> <span class="token string">"Doe"<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/22/JavaScript%E5%A4%8D%E4%B9%A0(%E5%85%AD)/">
+                <a href="/2020/05/22/JavaScript%E5%A4%8D%E4%B9%A0(%E4%B8%83)/">
                     <div class="card-image">
                         
-                        <img src="https://giffiles.alphacoders.com/211/211265.gif" class="responsive-img" alt="JavaScript复习(JSON)">
+                        <img src="https://giffiles.alphacoders.com/211/211265.gif" class="responsive-img" alt="JavaScript复习(代码规范)">
                         
-                        <span class="card-title">JavaScript复习(JSON)</span>
+                        <span class="card-title">JavaScript复习(代码规范)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JavaScript复习JSON概念JSON 英文全称 JavaScript Object NotationJSON 是一种轻量级的数据交换格式。JSON是独立的语言 *JSON 易于理解。
+                            JavaScript复习代码规范代码规范通常包括以下几个方面:
+变量和函数的命名规则
+空格，缩进，注释的使用规则。
+其他常用规范……
+规范的代码可以更易于阅读与维护。代码规范一般在开发前规定，可以跟你的团队成员来协商设置。
 
 
-JSON 实例{site:[
-    {"n
+变量名变量名
                         
                     </div>
                     <div class="publish-info">
