@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="壁纸(一), Kuma">
+    <meta name="keywords" content="JavaScript函数常用片段(BOM,Cookie,DOM), Kuma">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>壁纸(一) | Kuma</title>
+    <title>JavaScript函数常用片段(BOM,Cookie,DOM) | Kuma</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://pic.netbian.com/uploads/allimg/190801/235643-1564675003500b.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://images4.alphacoders.com/102/thumb-1920-1028306.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">壁纸(一)</h1>
+                    <h1 class="description center-align post-title">JavaScript函数常用片段(BOM,Cookie,DOM)</h1>
                 </div>
             </div>
         </div>
@@ -430,16 +430,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                                <span class="chip bg-color">推荐</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                                <span class="chip bg-color">前端教学</span>
                             </a>
                         
-                            <a href="/tags/%E5%A3%81%E7%BA%B8/">
-                                <span class="chip bg-color">壁纸</span>
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
                             </a>
                         
-                            <a href="/tags/%E5%8A%A8%E6%BC%AB/">
-                                <span class="chip bg-color">动漫</span>
+                            <a href="/tags/ES6/">
+                                <span class="chip bg-color">ES6</span>
                             </a>
                         
                     </div>
@@ -450,12 +450,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/" class="post-category">
-                                壁纸
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/%E5%8A%A8%E6%BC%AB/" class="post-category">
-                                动漫
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" class="post-category">
+                                JavaScript
                             </a>
                         
                     </div>
@@ -467,7 +467,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-18
+                    2020-05-24
                 </div>
                 
 
@@ -483,17 +483,108 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="高清壁纸"><a href="#高清壁纸" class="headerlink" title="高清壁纸"></a>高清壁纸</h2><p><a href="https://pan.baidu.com/s/1btsl31MgK6F02otsaDfKNg" target="_blank" rel="noopener">传送门</a><br>提取码：eu5c</p>
-<p><img src="https://i.loli.net/2020/05/19/uVMf28G5Q9geHyx.jpg" alt></p>
-<p><img src="https://i.loli.net/2020/05/19/Ul87NIzvGxdq1BT.jpg" alt></p>
-<p><img src="https://i.loli.net/2020/05/19/QpvngqLlo5TZrAP.jpg" alt></p>
-<p><img src="https://i.loli.net/2020/05/19/FyH3pakrJS984Vx.jpg" alt></p>
-<p><img src="https://i.loli.net/2020/05/19/Z3lxFjNsUtJHvb4.jpg" alt></p>
-<p><img src="https://i.loli.net/2020/05/19/nk6GKcdulR4w37M.jpg" alt></p>
-<p><img src="http://pic.netbian.com/uploads/allimg/200509/123736-15889990560a13.jpg" alt></p>
-<p><img src="http://pic.netbian.com/uploads/allimg/200331/001747-1585585067e690.jpg" alt></p>
-<p><img src="http://pic.netbian.com/uploads/allimg/200313/233347-158411362746c5.jpg" alt></p>
-<p><img src="http://pic.netbian.com/uploads/allimg/190801/235643-1564675003500b.jpg" alt></p>
+                <h2 id="浏览器对象-BOM"><a href="#浏览器对象-BOM" class="headerlink" title="浏览器对象 BOM"></a>浏览器对象 BOM</h2><h3 id="返回当前网页地址"><a href="#返回当前网页地址" class="headerlink" title="返回当前网页地址"></a>返回当前网页地址</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">currentURL</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="获取滚动条位置"><a href="#获取滚动条位置" class="headerlink" title="获取滚动条位置"></a>获取滚动条位置</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">getScrollPosition</span><span class="token punctuation">(</span>el <span class="token operator">=</span> window<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    x<span class="token punctuation">:</span> el<span class="token punctuation">.</span>pageXOffset <span class="token operator">!==</span> undefined <span class="token operator">?</span> el<span class="token punctuation">.</span>pageXOffset <span class="token punctuation">:</span> el<span class="token punctuation">.</span>scrollLeft<span class="token punctuation">,</span>
+    y<span class="token punctuation">:</span> el<span class="token punctuation">.</span>pageYOffset <span class="token operator">!==</span> undefined <span class="token operator">?</span> el<span class="token punctuation">.</span>pageYOffset <span class="token punctuation">:</span> el<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="页面跳转，是否记录在-history-中"><a href="#页面跳转，是否记录在-history-中" class="headerlink" title="页面跳转，是否记录在 history 中"></a>页面跳转，是否记录在 history 中</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">redirect</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> asLink <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  asLink <span class="token operator">?</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> url<span class="token punctuation">)</span> <span class="token punctuation">:</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="获取-url-中的参数"><a href="#获取-url-中的参数" class="headerlink" title="获取 url 中的参数"></a>获取 url 中的参数</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">getURLParameters</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> url
+    <span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/([^?=&amp;]+)(=([^&amp;]*))/g</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span>
+      <span class="token punctuation">(</span>a<span class="token punctuation">,</span> v<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">(</span>
+        <span class="token punctuation">(</span>a<span class="token punctuation">[</span>v<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"="</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> v<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"="</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> a
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="滚动条回到顶部动画"><a href="#滚动条回到顶部动画" class="headerlink" title="滚动条回到顶部动画"></a>滚动条回到顶部动画</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">scrollToTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> scrollTop <span class="token operator">=</span>
+    document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop <span class="token operator">||</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>scrollTop <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span><span class="token function">requestAnimationFrame</span><span class="token punctuation">(</span>scrollToTop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    window<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> c <span class="token operator">-</span> c <span class="token operator">/</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span><span class="token function">cancelAnimationFrame</span><span class="token punctuation">(</span>scrollToTop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="检测设备类型"><a href="#检测设备类型" class="headerlink" title="检测设备类型"></a>检测设备类型</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">detectDeviceType</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token regex">/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>
+    navigator<span class="token punctuation">.</span>userAgent
+  <span class="token punctuation">)</span>
+    <span class="token operator">?</span> <span class="token string">"Mobile"</span>
+    <span class="token punctuation">:</span> <span class="token string">"Desktop"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><h3 id="增"><a href="#增" class="headerlink" title="增"></a>增</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">setCookie</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">,</span> expiredays<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> exdate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  exdate<span class="token punctuation">.</span><span class="token function">setDate</span><span class="token punctuation">(</span>exdate<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> expiredays<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>cookie <span class="token operator">=</span>
+    key <span class="token operator">+</span>
+    <span class="token string">"="</span> <span class="token operator">+</span>
+    <span class="token function">escape</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">+</span>
+    <span class="token punctuation">(</span>expiredays <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">?</span> <span class="token string">""</span> <span class="token punctuation">:</span> <span class="token string">";expires="</span> <span class="token operator">+</span> exdate<span class="token punctuation">.</span><span class="token function">toGMTString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="删"><a href="#删" class="headerlink" title="删"></a>删</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">delCookie</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> exp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  exp<span class="token punctuation">.</span><span class="token function">setTime</span><span class="token punctuation">(</span>exp<span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> cval <span class="token operator">=</span> <span class="token function">getCookie</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>cval <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    document<span class="token punctuation">.</span>cookie <span class="token operator">=</span> name <span class="token operator">+</span> <span class="token string">"="</span> <span class="token operator">+</span> cval <span class="token operator">+</span> <span class="token string">";expires="</span> <span class="token operator">+</span> exp<span class="token punctuation">.</span><span class="token function">toGMTString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="查"><a href="#查" class="headerlink" title="查"></a>查</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">getCookie</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> arr<span class="token punctuation">,</span>
+    reg <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">"(^| )"</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">"=([^;]*)(;|$)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>arr <span class="token operator">=</span> document<span class="token punctuation">.</span>cookie<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> arr<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="文档对象-DOM"><a href="#文档对象-DOM" class="headerlink" title="文档对象 DOM"></a>文档对象 DOM</h2><h3 id="固定滚动条"><a href="#固定滚动条" class="headerlink" title="固定滚动条"></a>固定滚动条</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
+ * 功能描述：一些业务场景，如弹框出现时，需要禁止页面滚动，
+  这是兼容安卓和 iOS 禁止页面滚动的解决方案
+ */</span>
+
+<span class="token keyword">let</span> scrollTop <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">preventScroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// 存储当前滚动位置</span>
+  scrollTop <span class="token operator">=</span> window<span class="token punctuation">.</span>scrollY<span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// 将可滚动区域固定定位，可滚动区域高度为 0 后就不能滚动了</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">[</span><span class="token string">"overflow-y"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"hidden"</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>position <span class="token operator">=</span> <span class="token string">"fixed"</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token string">"100%"</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token operator">-</span>scrollTop <span class="token operator">+</span> <span class="token string">"px"</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">// document.body.style['overscroll-behavior'] = 'none'</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">recoverScroll</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">[</span><span class="token string">"overflow-y"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"auto"</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>position <span class="token operator">=</span> <span class="token string">"static"</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">// document.querySelector('body').style['overscroll-behavior'] = 'none'</span>
+
+  window<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> scrollTop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="判断当前位置是否为页面底部"><a href="#判断当前位置是否为页面底部" class="headerlink" title="判断当前位置是否为页面底部"></a>判断当前位置是否为页面底部</h3><p>返回值为 true/false</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">bottomVisible</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight <span class="token operator">+</span> window<span class="token punctuation">.</span>scrollY <span class="token operator">>=</span>
+    <span class="token punctuation">(</span>document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollHeight <span class="token operator">||</span>
+      document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight<span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="获取元素-css-样式"><a href="#获取元素-css-样式" class="headerlink" title="获取元素 css 样式"></a>获取元素 css 样式</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">getStyle</span><span class="token punctuation">(</span>el<span class="token punctuation">,</span> ruleName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">getComputedStyle</span><span class="token punctuation">(</span>el<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getPropertyValue</span><span class="token punctuation">(</span>ruleName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
 
             </div>
             <hr/>
@@ -519,7 +610,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kuma154.github.io/2020/05/18/%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8/">http://kuma154.github.io/2020/05/18/%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8/</a>
+                    <a href="http://kuma154.github.io/2020/05/24/JavaScript%E5%87%BD%E6%95%B0%E5%B8%B8%E7%94%A8%E7%89%87%E6%AE%B5(%E4%BA%8C)/">http://kuma154.github.io/2020/05/24/JavaScript%E5%87%BD%E6%95%B0%E5%B8%B8%E7%94%A8%E7%89%87%E6%AE%B5(%E4%BA%8C)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -557,16 +648,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                                    <span class="chip bg-color">推荐</span>
+                                <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                                    <span class="chip bg-color">前端教学</span>
                                 </a>
                             
-                                <a href="/tags/%E5%A3%81%E7%BA%B8/">
-                                    <span class="chip bg-color">壁纸</span>
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
                                 </a>
                             
-                                <a href="/tags/%E5%8A%A8%E6%BC%AB/">
-                                    <span class="chip bg-color">动漫</span>
+                                <a href="/tags/ES6/">
+                                    <span class="chip bg-color">ES6</span>
                                 </a>
                             
                         </div>
@@ -738,34 +829,41 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/18/%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8(persona5)/">
+                <a href="/2020/05/25/CSS%E5%B8%B8%E7%94%A8%E7%89%87%E6%AE%B5(%E4%B8%80)/">
                     <div class="card-image">
                         
-                        <img src="https://images8.alphacoders.com/917/thumbbig-917137.jpg" class="responsive-img" alt="壁纸(persona5)">
+                        <img src="https://images2.alphacoders.com/100/thumb-1920-1007550.jpg" class="responsive-img" alt="CSS常用代码片段(一)">
                         
-                        <span class="card-title">壁纸(persona5)</span>
+                        <span class="card-title">CSS常用代码片段(一)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            高二的春天，雨宫莲转学到了东京的「秀尽学园」。因某事为契机而觉醒为“Persona”使用者的莲，与新认识的伙伴们组建了「心之怪盗团」。怪盗团员们去盗走陷进了罪恶欲望之中的成年人们的“扭曲的欲望”，让成年人们洗心革面。同时，难以让人理解的精神
+                            CSS常用代码片段清除浮动如果当前层级有浮动元素，那么在其父级添加上 clearfix 类即可。
+
+
+// 清除浮动
+.clearfix:after {
+  content: "\00A0";
+  display: block;
+  vis
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-25
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/" class="post-category">
-                                    壁纸
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/%E5%8A%A8%E6%BC%AB/" class="post-category">
-                                    动漫
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/CSS/" class="post-category">
+                                    CSS
                                 </a>
                             
                             
@@ -775,16 +873,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                        <span class="chip bg-color">推荐</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                        <span class="chip bg-color">前端教学</span>
                     </a>
                     
-                    <a href="/tags/%E5%A3%81%E7%BA%B8/">
-                        <span class="chip bg-color">壁纸</span>
-                    </a>
-                    
-                    <a href="/tags/persona/">
-                        <span class="chip bg-color">persona</span>
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>
@@ -798,44 +892,38 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/18/%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8%E4%BA%8C/">
+                <a href="/2020/05/24/JavaScript%E5%87%BD%E6%95%B0%E5%B8%B8%E7%94%A8%E7%89%87%E6%AE%B5(%E4%B8%80)/">
                     <div class="card-image">
                         
-                        <img src="http://pic.netbian.com/uploads/allimg/190727/205126-15642318863550.jpg" class="responsive-img" alt="壁纸(二)">
+                        <img src="https://images4.alphacoders.com/102/thumb-1920-1028306.png" class="responsive-img" alt="JavaScript函数常用片段(数组,数字)">
                         
-                        <span class="card-title">壁纸(二)</span>
+                        <span class="card-title">JavaScript函数常用片段(数组,数字)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-
-
-
-
-
-
-
-
-
+                            数组 Array数组去重function noRepeat(arr) {
+  return [...new Set(arr)];
+}
+查找数组最大function arrayMax(arr) {
+  return Math.max(...a
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/" class="post-category">
-                                    壁纸
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/%E5%8A%A8%E6%BC%AB/" class="post-category">
-                                    动漫
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" class="post-category">
+                                    JavaScript
                                 </a>
                             
                             
@@ -845,16 +933,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                        <span class="chip bg-color">推荐</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                        <span class="chip bg-color">前端教学</span>
                     </a>
                     
-                    <a href="/tags/%E5%A3%81%E7%BA%B8/">
-                        <span class="chip bg-color">壁纸</span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
-                    <a href="/tags/%E5%8A%A8%E6%BC%AB/">
-                        <span class="chip bg-color">动漫</span>
+                    <a href="/tags/ES6/">
+                        <span class="chip bg-color">ES6</span>
                     </a>
                     
                 </div>
