@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="前端学习路径, Kuma">
+    <meta name="keywords" content="Git命令笔记, Kuma">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>前端学习路径 | Kuma</title>
+    <title>Git命令笔记 | Kuma</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://images5.alphacoders.com/101/thumb-1920-1014466.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://images6.alphacoders.com/480/thumb-1920-480421.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">前端学习路径</h1>
+                    <h1 class="description center-align post-title">Git命令笔记</h1>
                 </div>
             </div>
         </div>
@@ -434,6 +434,10 @@
                                 <span class="chip bg-color">前端教学</span>
                             </a>
                         
+                            <a href="/tags/github/">
+                                <span class="chip bg-color">github</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -446,6 +450,10 @@
                                 前端
                             </a>
                         
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/github/" class="post-category">
+                                github
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -455,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-25
+                    2020-06-13
                 </div>
                 
 
@@ -471,14 +479,84 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前端学习路径图"><a href="#前端学习路径图" class="headerlink" title="前端学习路径图"></a>前端学习路径图</h2><p><a href="https://www.processon.com/view/link/5d3a5947e4b0511f13134ced#map" target="_blank" rel="noopener">传送门</a></p>
-<h3 id="JavaScript基础"><a href="#JavaScript基础" class="headerlink" title="JavaScript基础"></a>JavaScript基础</h3><p>知识点包括js类型、typeof、instanceof，类型转换<br>作用域与作用域链、变量提升<br>js原型链、new、继承方式<br>this指向、闭包、垃圾回收机制事件<br>队列、事件循环DOM对象<br>事件委托、DOM事件模型<br>原生ajax</p>
-<h3 id="Html5-CSS3"><a href="#Html5-CSS3" class="headerlink" title="Html5+CSS3"></a>Html5+CSS3</h3><p>html5新特性、语义化<br>浏览器渲染机制、重绘、重排<br>css盒子模型、flex、动画<br>css样式优先级<br>BFC</p>
-<h3 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h3><h4 id="vue基础"><a href="#vue基础" class="headerlink" title="vue基础"></a>vue基础</h4><p>vue生命周期、keep-alive<br>computed与watch<br>v-for中key的作用<br>vue组件的通信方式<br>指令</p>
-<h4 id="vue底层原理"><a href="#vue底层原理" class="headerlink" title="vue底层原理"></a>vue底层原理</h4><p>双向绑定实现原理<br>v-model的实现<br>nextTick的实现<br>vnode的理解，compiler和patch的过程<br>new Vue后整个的流程<br>keep-alive的实现<br>vuex、vue-router实现原理</p>
-<h3 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h3><p>http特性以及状态码<br>http的三次握手<br>http1.0、http1.1、http2.0的区别<br>http如何实现缓存<br>https的握手过程<br>输入url后http请求的完整过程<br>get与post请求区别</p>
-<h3 id="web安全"><a href="#web安全" class="headerlink" title="web安全"></a>web安全</h3><p>理解xss，csrf，ddos攻击原理以及避免方式<br>xss与csrf的区别</p>
-<h3 id="前端工程化"><a href="#前端工程化" class="headerlink" title="前端工程化"></a>前端工程化</h3><p>前端性能优化的几种方式<br>如何做性能优化上报<br>如何实现一个错误监控系统<br>什么是同源策略<br>前后端如何通信<br>跨域通信的几种方式</p>
+                <h3 id="学生宿舍管理系统"><a href="#学生宿舍管理系统" class="headerlink" title="学生宿舍管理系统"></a>学生宿舍管理系统</h3><h3 id="环境需求"><a href="#环境需求" class="headerlink" title="环境需求"></a>环境需求</h3><blockquote><p>1.tomcat7.0</p>
+<p>2.mysql5.7 </p>
+<p>3.navicate连接数据库</p>
+<p>4.jre1.8</p>
+</blockquote>
+
+<h3 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h3><h4 id="学生管理"><a href="#学生管理" class="headerlink" title="学生管理"></a>学生管理</h4><blockquote><p>1.学号</p>
+<p>2.姓名</p>
+<p>3.密码</p>
+<p>4.性别</p>
+<p>5.id</p>
+</blockquote>
+<h4 id="宿舍楼管理"><a href="#宿舍楼管理" class="headerlink" title="宿舍楼管理"></a>宿舍楼管理</h4><blockquote><p>1.名称</p>
+<p>2.位置</p>
+<p>3.id</p>
+</blockquote>
+<h4 id="宿舍管理"><a href="#宿舍管理" class="headerlink" title="宿舍管理"></a>宿舍管理</h4><blockquote><p>1.</p>
+<p>2.</p>
+<p>3.id</p>
+</blockquote>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>更改设置。可以是版本库的设置，也可以是系统的或全局的</p>
+<blockquote><p> 显示当前的Git配置<br>$ git config –list</p>
+<p> 编辑Git配置文件<br>$ git config -e [–global]</p>
+<p> 输出、设置基本的全局变量<br>$ git config –global user.email<br>$ git config –global user.name</p>
+<p>$ git config –global user.email “<a href="mailto:MyEmail@gmail.com">MyEmail@gmail.com</a>“<br>$ git config –global user.name “My Name”</p>
+<p> 定义当前用户所有提交使用的作者邮箱。<br>$ git config –global alias.<alias-name> <git-command></git-command></alias-name></p>
+<p> 为Git命令创建一个快捷方式（别名）。<br>$ git config –system core.editor <editor></editor></p>
+</blockquote>
+
+
+<h3 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h3><p>git 内置了对命令非常详细的解释，可以供我们快速查阅</p>
+<blockquote><p> 查找可用命令<br>$ git help</p>
+<p>查找所有可用命令<br>$ git help -a</p>
+<p> 在文档当中查找特定的命令<br> git help &lt;命令&gt;<br>$ git help add<br>$ git help commit<br>$ git help init</p>
+</blockquote>
+
+<h3 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h3><p>显示索引文件（也就是当前工作空间）和当前的头指针指向的提交的不同</p>
+<blockquote><p> 查找可用命令<br>$ git help</p>
+<p>查找所有可用命令<br>$ git help -a</p>
+<p> 在文档当中查找特定的命令<br> 显示分支，未跟踪文件，更改和其他不同<br>$ git status</p>
+<p> 查看其他的git status的用法<br>$ git help status</p>
+</blockquote>
+
+<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><p>添加文件到当前工作空间中。如果你不使用 git add 将文件添加进去，那么这些文件也不会添加到之后的提交之中</p>
+<blockquote><p> 添加一个文件<br>$ git add test.js</p>
+<p>添加一个子目录中的文件<br>$ git add /path/to/file/test.js</p>
+<p>支持正则表达式<br>$ git add ./*.js</p>
+<p> 添加指定文件到暂存区<br>$ git add [file1] [file2] …</p>
+<p> 添加指定目录到暂存区，包括子目录<br>$ git add [dir]</p>
+<p> 添加当前目录的所有文件到暂存区<br>$ git add .</p>
+<p> 添加每个变化前，都会要求确认<br> 对于同一个文件的多处变化，可以实现分次提交<br>$ git add -p</p>
+</blockquote>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>rm 和上面的 add 命令相反，从工作空间中去掉某个文件</p>
+<blockquote><p> 移除 HelloWorld.js<br>$ git rm HelloWorld.js</p>
+<p> 移除子目录中的文件<br>$ git rm /pather/to/the/file/HelloWorld.js</p>
+<p> 删除工作区文件，并且将这次删除放入暂存区<br>$ git rm [file1] [file2] …</p>
+<p> 停止追踪指定文件，但该文件会保留在工作区<br>$ git rm –cached [file]</p>
+</blockquote>
+
+<h3 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h3><p>重命名或移动一个文件</p>
+<blockquote><p> 重命名<br>$ git mv test.js test2.js</p>
+<p> 移动<br>$ git mv test.js ./new/path/test.js</p>
+<p> 改名文件，并且将这个改名放入暂存区<br>$ git mv [file-original] [file-renamed]</p>
+<p> 强制重命名或移动<br> 这个文件已经存在，将要覆盖掉<br>$ git mv -f myFile existingFile</p>
+</blockquote>
+
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><blockquote><p> 生成一个可供发布的压缩包<br>$ git archive</p>
+<p> 打补丁<br>$ git apply ../sync.patch</p>
+<p> 测试补丁能否成功<br>$ git apply –check ../sync.patch</p>
+<p> 查看Git的版本<br>$ git –version</p>
+</blockquote>
+
+
+
+
+
 
             </div>
             <hr/>
@@ -504,7 +582,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kuma154.github.io/2020/05/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/">http://kuma154.github.io/2020/05/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/</a>
+                    <a href="http://kuma154.github.io/2020/06/13/%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">http://kuma154.github.io/2020/06/13/%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -544,6 +622,10 @@
                             
                                 <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
                                     <span class="chip bg-color">前端教学</span>
+                                </a>
+                            
+                                <a href="/tags/github/">
+                                    <span class="chip bg-color">github</span>
                                 </a>
                             
                         </div>
@@ -711,9 +793,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/06/13/%E5%AD%A6%E7%94%9F%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
                     <div class="card-image">
@@ -746,9 +829,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -765,6 +848,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -787,25 +871,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/25/CSS%E5%B8%B8%E7%94%A8%E7%89%87%E6%AE%B5(%E4%B8%80)/">
+                <a href="/2020/05/25/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/">
                     <div class="card-image">
                         
-                        <img src="https://images2.alphacoders.com/100/thumb-1920-1007550.jpg" class="responsive-img" alt="CSS常用代码片段(一)">
+                        <img src="https://images5.alphacoders.com/101/thumb-1920-1014466.jpg" class="responsive-img" alt="前端学习路径">
                         
-                        <span class="card-title">CSS常用代码片段(一)</span>
+                        <span class="card-title">前端学习路径</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CSS常用代码片段清除浮动如果当前层级有浮动元素，那么在其父级添加上 clearfix 类即可。
-
-
-// 清除浮动
-.clearfix:after {
-  content: "\00A0";
-  display: block;
-  vis
+                            前端学习路径图传送门
+JavaScript基础知识点包括js类型、typeof、instanceof，类型转换作用域与作用域链、变量提升js原型链、new、继承方式this指向、闭包、垃圾回收机制事件队列、事件循环DOM对象事件委托、DOM
                         
                     </div>
                     <div class="publish-info">
@@ -820,10 +898,6 @@
                                     前端
                                 </a>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/CSS/" class="post-category">
-                                    CSS
-                                </a>
-                            
                             
                         </span>
                     </div>
@@ -833,10 +907,6 @@
                     
                     <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
                         <span class="chip bg-color">前端教学</span>
-                    </a>
-                    
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>
