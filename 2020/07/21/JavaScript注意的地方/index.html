@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="推荐的一些B站up主, Kuma">
+    <meta name="keywords" content="JavaScript注意, Kuma">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>推荐的一些B站up主 | Kuma</title>
+    <title>JavaScript注意 | Kuma</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://images2.alphacoders.com/967/thumb-350-967390.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://giffiles.alphacoders.com/211/211265.gif')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">推荐的一些B站up主</h1>
+                    <h1 class="description center-align post-title">JavaScript注意</h1>
                 </div>
             </div>
         </div>
@@ -430,16 +430,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%8C%BA/">
-                                <span class="chip bg-color">学习区</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                                <span class="chip bg-color">前端教学</span>
                             </a>
                         
-                            <a href="/tags/%E5%BD%B1%E8%A7%86%E5%8C%BA/">
-                                <span class="chip bg-color">影视区</span>
-                            </a>
-                        
-                            <a href="/tags/switch%E5%8C%BA/">
-                                <span class="chip bg-color">switch区</span>
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
                             </a>
                         
                     </div>
@@ -450,16 +446,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Bilibili/" class="post-category">
-                                Bilibili
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
-                            <a href="/categories/Bilibili/UP%E4%B8%BB/" class="post-category">
-                                UP主
-                            </a>
-                        
-                            <a href="/categories/Bilibili/UP%E4%B8%BB/%E6%8E%A8%E8%8D%90/" class="post-category">
-                                推荐
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" class="post-category">
+                                JavaScript
                             </a>
                         
                     </div>
@@ -471,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-18
+                    2020-07-21
                 </div>
                 
 
@@ -487,10 +479,127 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>作为混迹于B站多年的小清新<img src="https://i0.hdslb.com/bfs/emote/bba7c12aa51fed0199c241465560dfc2714c593e.png@100w_100h.webp" alt><br><img src="http://p2.so.qhmsg.com/t026f049f3360ace178.jpg" alt><br>今天准备在这里给大家推荐一些我喜欢的b站up主,仅代表个人观点和喜好，不具备任何客观性和代表性。篇幅长度有限不能一次性穷尽所有up主<br>主要分区：</p>
-<h3 id="学习区"><a href="#学习区" class="headerlink" title="学习区"></a>学习区</h3><p><a href="http://p2.so.qhmsg.com/t026f049f3360ace178.jpg" target="_blank" rel="noopener">传送门</a></p>
-<h3 id="影视区"><a href="#影视区" class="headerlink" title="影视区"></a>影视区</h3><p><a href="http://p2.so.qhmsg.com/t026f049f3360ace178.jpg" target="_blank" rel="noopener">传送门</a></p>
-<h3 id="switch区"><a href="#switch区" class="headerlink" title="switch区"></a>switch区</h3><p><a href="http://p2.so.qhmsg.com/t026f049f3360ace178.jpg" target="_blank" rel="noopener">传送门</a></p>
+                <h2 id="JavaScript注意"><a href="#JavaScript注意" class="headerlink" title="JavaScript注意"></a>JavaScript注意</h2><h3 id="判断是否为数组"><a href="#判断是否为数组" class="headerlink" title="判断是否为数组"></a>判断是否为数组</h3><p>就算变量定义的是数组格式，typeof 返回的数据类型还是 object :</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> cars<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"Saab"</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"Volvo"</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"BMW"</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> cars<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// object</span></code></pre>
+<h4 id="判断方法1"><a href="#判断方法1" class="headerlink" title="判断方法1"></a>判断方法1</h4><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> cars<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"Saab"</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"Volvo"</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"BMW"</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span>isArray<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>cars<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h4 id="判断方法2"><a href="#判断方法2" class="headerlink" title="判断方法2"></a>判断方法2</h4><p>instanceof运算符用来判断一个构造函数的prototype属性所指向的对象是否存在另外一个要检测对象的原型链上</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> cars<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"Saab"</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"Volvo"</span><span class="token punctuation">;</span>
+cars<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"BMW"</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>cars <span class="token keyword">instanceof</span> <span class="token class-name">Array</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">)</span> 
+<span class="token punctuation">}</span></code></pre>
+<h3 id="typeof-和-instanceof-区别"><a href="#typeof-和-instanceof-区别" class="headerlink" title="typeof 和 instanceof 区别"></a>typeof 和 instanceof 区别</h3><blockquote><p>typeof 返回值是一个字符串，该字符串说明运算数的类型<br>typeof 一般只能返回如下几个结果：”number”、”string”、”boolean”、”object”、”function” 和 “undefined”。<br>typeof 来获取一个变量是否存在，如 if(typeof a!=”undefined”){alert(“ok”)}</p>
+<p>判断一个变量的类型尝尝会用 typeof 运算符，在使用 typeof 运算符时采用引用类型存储值会出现一个问题，无论引用的是什么类型的对象，它都返回 “object”。这就需要用到instanceof来检测某个对象是不是另一个对象的实例<br>instanceof 运算符用来测试一个对象在其原型链中是否存在一个构造函数的 prototype 属性。</p>
+<pre class=" language-javascript"><span class="keyword">var</span> a=<span class="keyword">new</span> <span class="built_in"><code class="language-javascript"><span class="keyword">var</span> a=<span class="keyword">new</span> <span class="built_in">Array</span>();
+alert(a <span class="keyword">instanceof</span> <span class="built_in">Array</span>); <span class="comment">// true，</span>
+同时 alert(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>) <span class="comment">//也会返回 true;</span>
+这是因为 <span class="built_in">Array</span> 是 object 的子类。</code></pre>
+</blockquote>
+
+<h3 id="let作用域规则"><a href="#let作用域规则" class="headerlink" title="let作用域规则"></a>let作用域规则</h3><blockquote><p>let允许你声明一个作用域被限制在块级中的变量、语句或者表达式。在Function中局部变量推荐使用let变量，避免变量名冲突。</p>
+<p>let 声明的变量只在其声明的块或子块中可用，这一点，与var相似。二者之间最主要的区别在于var声明的变量的作用域是整个封闭函数。</p>
+</blockquote>
+
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> b<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">var</span> b<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//2</span>
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//2</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> b<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> b<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//2</span>
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//1</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><p>JavaScript 对象是键值对的容器，“键”必须为字符串，“值”可以是 JavaScript 中除 null 和 undefined 以外的任意数据类型。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> bird <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name <span class="token punctuation">:</span> <span class="token string">"Amy"</span><span class="token punctuation">,</span>
+    age <span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    color <span class="token punctuation">:</span> <span class="token string">"white"</span><span class="token punctuation">,</span>
+    skill <span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Fly"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    nickname <span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//非法</span>
+    play <span class="token punctuation">:</span> undefined  <span class="token comment" spellcheck="true">//非法</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a>prototype</h3><h4 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h4><p>每个对象都有prototype属性，Javascript中对象的prototype属性的解释是：返回对象类型原型的引用</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>Test<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 输出 "Object"</span></code></pre>
+<h4 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h4><p>javascript的方法可以分为三类：<br>a 类方法<br>b 对象方法<br>c 原型方法</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">People</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token operator">=</span>name<span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">//对象方法</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>Introduce<span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"My name is "</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//类方法</span>
+People<span class="token punctuation">.</span>Run<span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"I can run"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//原型方法</span>
+People<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>IntroduceChinese<span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"我的名字是"</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//测试</span>
+<span class="token keyword">var</span> p1<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">People</span><span class="token punctuation">(</span><span class="token string">"Windking"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+p1<span class="token punctuation">.</span><span class="token function">Introduce</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+People<span class="token punctuation">.</span><span class="token function">Run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+p1<span class="token punctuation">.</span><span class="token function">IntroduceChinese</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4 id="添加属性"><a href="#添加属性" class="headerlink" title="添加属性"></a>添加属性</h4><p>prototype是一个对象，因此，你能够给它添加属性。你添加给prototype的属性将会成为使用这个构造函数创建的对象的通用属性。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Fish</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> color<span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token operator">=</span>name<span class="token punctuation">;</span>
+   <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token operator">=</span>color<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+Fish<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>livesIn<span class="token operator">=</span><span class="token string">"water"</span><span class="token punctuation">;</span>
+Fish<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>price<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> fish1<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Fish</span><span class="token punctuation">(</span><span class="token string">"mackarel"</span><span class="token punctuation">,</span> <span class="token string">"gray"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> fish2<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Fish</span><span class="token punctuation">(</span><span class="token string">"goldfish"</span><span class="token punctuation">,</span> <span class="token string">"orange"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> fish3<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Fish</span><span class="token punctuation">(</span><span class="token string">"salmon"</span><span class="token punctuation">,</span> <span class="token string">"white"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span>int i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;=</span><span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token function">alert</span><span class="token punctuation">(</span>fish<span class="token punctuation">.</span>name<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>fish<span class="token punctuation">.</span>color<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>fish<span class="token punctuation">.</span>livesIn<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>fish<span class="token punctuation">.</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>当一个对象被创建时，这个构造函数 将会把它的属性prototype赋给新对象的内部属性<strong>proto</strong>。这个<strong>proto</strong>被这个对象用来查找它的属性。</p>
+<h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><h4 id="解释-1"><a href="#解释-1" class="headerlink" title="解释"></a>解释</h4><p>返回一个指向创建了该对象原型的函数引用。需要注意的是，该属性的值是那个函数本身，而不是一个包含函数名称的字符串。对于原始值（如1，true 或 “test”），该属性为只读。<br>所有对象都会从它的原型上继承一个 constructor 属性：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span> <span class="token comment" spellcheck="true">// 或者 o = {}</span>
+o<span class="token punctuation">.</span>constructor <span class="token operator">==</span> Object
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span>  <span class="token comment" spellcheck="true">// 或者 a = []</span>
+a<span class="token punctuation">.</span>constructor <span class="token operator">==</span> Array
+<span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+n<span class="token punctuation">.</span>constructor <span class="token operator">==</span> Number</code></pre>
+<h4 id="打印出一个对象的构造函数"><a href="#打印出一个对象的构造函数" class="headerlink" title="打印出一个对象的构造函数"></a>打印出一个对象的构造函数</h4><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Tree</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> theTree <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tree</span><span class="token punctuation">(</span><span class="token string">"Redwood"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">"theTree.constructor is "</span> <span class="token operator">+</span> theTree<span class="token punctuation">.</span>constructor <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>输出：</p>
+<pre class=" language-javascript"><code class="language-javascript">theTree<span class="token punctuation">.</span>constructor is <span class="token keyword">function</span> <span class="token function">Tree</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
 
             </div>
             <hr/>
@@ -516,7 +625,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://kuma154.github.io/2020/05/18/Third/">http://kuma154.github.io/2020/05/18/Third/</a>
+                    <a href="http://kuma154.github.io/2020/07/21/JavaScript%E6%B3%A8%E6%84%8F%E7%9A%84%E5%9C%B0%E6%96%B9/">http://kuma154.github.io/2020/07/21/JavaScript%E6%B3%A8%E6%84%8F%E7%9A%84%E5%9C%B0%E6%96%B9/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -554,16 +663,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E5%8C%BA/">
-                                    <span class="chip bg-color">学习区</span>
+                                <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                                    <span class="chip bg-color">前端教学</span>
                                 </a>
                             
-                                <a href="/tags/%E5%BD%B1%E8%A7%86%E5%8C%BA/">
-                                    <span class="chip bg-color">影视区</span>
-                                </a>
-                            
-                                <a href="/tags/switch%E5%8C%BA/">
-                                    <span class="chip bg-color">switch区</span>
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
                                 </a>
                             
                         </div>
@@ -735,45 +840,41 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/18/%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8/">
+                <a href="/2020/07/21/JavaScript%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86/">
                     <div class="card-image">
                         
-                        <img src="http://pic.netbian.com/uploads/allimg/190801/235643-1564675003500b.jpg" class="responsive-img" alt="壁纸(一)">
+                        <img src="https://giffiles.alphacoders.com/211/211265.gif" class="responsive-img" alt="JavaScript字符串操作整理">
                         
-                        <span class="card-title">壁纸(一)</span>
+                        <span class="card-title">JavaScript字符串操作整理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            高清壁纸传送门提取码：eu5c
+                            JavaScript操作整理1、字符串转换数字类型转String类型
+// 1.
+var num=24;
+var mystr=num.toString();    //"24"
 
-
-
-
-
-
-
-
-
-
-
+// 2.
+var num=24;
+var mystr=St
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-21
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/" class="post-category">
-                                    壁纸
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
-                            <a href="/categories/%E5%A3%81%E7%BA%B8/%E5%8A%A8%E6%BC%AB/" class="post-category">
-                                    动漫
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" class="post-category">
+                                    JavaScript
                                 </a>
                             
                             
@@ -783,16 +884,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                        <span class="chip bg-color">推荐</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                        <span class="chip bg-color">前端教学</span>
                     </a>
                     
-                    <a href="/tags/%E5%A3%81%E7%BA%B8/">
-                        <span class="chip bg-color">壁纸</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8A%A8%E6%BC%AB/">
-                        <span class="chip bg-color">动漫</span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
@@ -806,35 +903,39 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
+                <a href="/2020/07/20/ES6%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
                     <div class="card-image">
                         
+                        <img src="https://giffiles.alphacoders.com/211/211265.gif" class="responsive-img" alt="ES6基础">
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="关于我的博客搭建(一)">
-                        
-                        <span class="card-title">关于我的博客搭建(一)</span>
+                        <span class="card-title">ES6基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Hexo简介Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持
+                            JavaScript复习https://juejin.im/post/5c6234f16fb9a049a81fcca5
+JS 中的数据类型基本数据类型：number（数字类型的数据）string（字符串类型）boolean（布尔数据类型）o
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/github/" class="post-category">
-                                    github
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
-                            <a href="/categories/github/nodejs/" class="post-category">
-                                    nodejs
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/ES6/" class="post-category">
+                                    ES6
                                 </a>
                             
                             
@@ -844,16 +945,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/github/">
-                        <span class="chip bg-color">github</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF%E6%95%99%E5%AD%A6/">
+                        <span class="chip bg-color">前端教学</span>
                     </a>
                     
-                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">环境搭建</span>
-                    </a>
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
